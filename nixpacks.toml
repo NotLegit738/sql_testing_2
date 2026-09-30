@@ -1,0 +1,13 @@
+[phases.build]
+cmds = ["npm install --legacy-peer-deps", "npm run build"]
+
+[phases.start]
+cmds = ["npm run start"]
+
+[variables]
+NODE_ENV = "production"
+PORT = "3000"
+HOSTNAME = "0.0.0.0"
+
+[static]
+# No static files to serve
